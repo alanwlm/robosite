@@ -155,8 +155,9 @@ io.on('connection', (socket) => {
 
 const PORT = process.env.PORT || 3001;
 
-httpServer.listen(PORT, () => {
+httpServer.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on port ${PORT}`);
+  console.log(`Network: http://0.0.0.0:${PORT}`);
   console.log(`WebSocket server ready for video streaming`);
 });
 

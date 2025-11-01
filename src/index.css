@@ -1211,6 +1211,21 @@ html {
   font-size: var(--font-size);
 }
 
+/* Mobile keyboard support */
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  touch-action: pan-y;
+}
+
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
