@@ -1,0 +1,22 @@
+{
+  "name": "robot-learning-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Backend server for robot learning data collection",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "export": "node scripts/exportData.js",
+    "export:all": "node scripts/exportData.js all",
+    "export:manifest": "node scripts/exportData.js manifest"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.2",
+    "cors": "^2.8.5",
+    "uuid": "^9.0.1",
+    "canvas": "^2.11.2"
+  }
+}
+

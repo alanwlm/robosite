@@ -1,0 +1,11 @@
+# Python dependencies for data loading and processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Optional dependencies for specific use cases
+tensorflow>=2.13.0  # For TensorFlow dataset conversion
+datasets>=2.14.0    # For HuggingFace datasets
+scikit-learn>=1.3.0 # For train/test splitting
+torch>=2.0.0        # For PyTorch integration (if needed)
+pillow>=10.0.0      # For image processing
+
