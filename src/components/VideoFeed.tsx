@@ -43,7 +43,7 @@ export const VideoFeed = forwardRef<VideoFeedRef, VideoFeedProps>(({ isLive = tr
 
     const frameNumber = String(frameNum).padStart(4, '0');
     const img = new Image();
-    img.src = `/videos/frames/frame_${frameNumber}.png`;
+    img.src = `${import.meta.env.BASE_URL}videos/frames/frame_${frameNumber}.png`;
     img.onload = () => {
       canvas.width = img.width;
       canvas.height = img.height;
